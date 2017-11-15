@@ -5,10 +5,9 @@
 		"nl": "Thermostaat Kraan"
 	},
 	"zwave": {
-		"manufacturerId": 2,
-		"productTypeId": 277,
-		"productId": 40976,
-		"wakeUpInterval": 1800,
+		"manufacturerId": 271,
+		"productTypeId": 4865,
+		"productId": 4096,
 		"learnmode": {
 		"instruction": {
 				"en": "RTFM",
