@@ -1,7 +1,7 @@
-# Tempie Fibo Valve Rijder      
+# Fibaro Heat Controller - Thermostat Valve    
 Until Athom makes it in the main app       
     
 ## Supported devices    
-* Fibo Thermo Dingges
+* Fibaro Heat Controller with or without external bluetooth temp sensor
 
    

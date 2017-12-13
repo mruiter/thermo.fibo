@@ -49,13 +49,20 @@
         "productId": 4096,
         "learnmode": {
           "instruction": {
-            "en": "RTFM",
-            "nl": "RTFM"
+            "en": "To add the device to the Z-Wave network:\r\n1.\tMake sure the device is within the direct range of your Z-Wave controller.\r\n2.\tSet the main controller in (security/non-security) add mode.\r\n3.\tUse the included key to quickly triple click the button on the thermostatic head.\r\n4.\tThe LED ring will start blinking white.\r\n5.\tIf you are adding in S2 authenticated mode, type in the device pin code (underlined part of the public key on the label).\r\n6.\tWait for the adding process to end.\r\n7.\tSuccessful adding will be confirmed by the Z-Wave controller.\r\n",
+            "nl": "To add the device to the Z-Wave network:\r\n1.\tMake sure the device is within the direct range of your Z-Wave controller.\r\n2.\tSet the main controller in (security/non-security) add mode.\r\n3.\tUse the included key to quickly triple click the button on the thermostatic head.\r\n4.\tThe LED ring will start blinking white.\r\n5.\tIf you are adding in S2 authenticated mode, type in the device pin code (underlined part of the public key on the label).\r\n6.\tWait for the adding process to end.\r\n7.\tSuccessful adding will be confirmed by the Z-Wave controller.\r\n"
           }
         },
         "associationGroups": [
           1
-        ]
+        ],
+        "associationGroupsOptions": {
+          "1": {
+            "hint": {
+              "en": "Z-Wave Plus Lifeline association group that reports the device status and allows for assigning single device only (main controller by default)"
+            }
+          }
+        }
       },
       "class": "thermostat",
       "capabilities": [
@@ -73,7 +80,33 @@
       "images": {
         "large": "/drivers/FGT-001/assets/images/large.jpg",
         "small": "/drivers/FGT-001/assets/images/small.jpg"
-      }
+      },
+      "settings": [
+        {
+          "id": 1,
+          "value": 240,
+          "label": {
+            "en": "Override Schedule duration"
+          },
+          "hint": {
+            "en": "This parameter determines duration of Override Schedule after turning the knob while normal schedule is active (set by Schedule CC)."
+          },
+          "_size": 4,
+          "type": "number"
+        },
+        {
+          "id": 2,
+          "value": 1,
+          "label": {
+            "en": "Additional functions"
+          },
+          "hint": {
+            "en": "This parameter allows to enable different additional functions of the\r\ndevice. See manual"
+          },
+          "_size": 4,
+          "type": "number"
+        }
+      ]
     }
   ],
   "flow": {
